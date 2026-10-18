@@ -1,0 +1,113 @@
+.newbooks-section {
+  width: 100%;
+  padding: 50px 0 50px;
+  background: #edf3ff;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.newbooks-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  width: 100%;
+  max-width: 900px;
+  min-height: 130px;
+  margin: 0 auto;
+}
+
+.newbooks-text {
+  flex: 0 1 380px;
+}
+
+.newbooks-text h2 {
+  margin: 0;
+  color: #30416b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.newbooks-illustration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 180px;
+}
+
+.newbooks-illustration img {
+  display: block;
+  max-width: 400px;
+  height: 360px;
+  object-fit: contain;
+}
+
+/* Planshet */
+@media (max-width: 768px) {
+  .newbooks-section {
+    padding: 20px;
+  }
+
+  .newbooks-container {
+    gap: 25px;
+    min-height: 120px;
+  }
+
+  .newbooks-text h2 {
+    font-size: 18px;
+  }
+
+  .newbooks-illustration {
+    flex-basis: 145px;
+  }
+
+  .newbooks-illustration img {
+    max-width: 145px;
+    height: 120px;
+  }
+}
+
+/* Telefon */
+@media (max-width: 480px) {
+  .newbooks-section {
+    padding: 20px 14px;
+  }
+
+  .newbooks-container {
+    gap: 8px;
+    min-height: 105px;
+  }
+
+  .newbooks-text {
+    flex: 1 1 55%;
+  }
+
+  .newbooks-text h2 {
+    font-size: clamp(13px, 3.7vw, 17px);
+  }
+
+  .newbooks-illustration {
+    flex: 0 1 42%;
+  }
+
+  .newbooks-illustration img {
+    max-width: 140px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 350px) {
+  .newbooks-container {
+    gap: 5px;
+  }
+
+  .newbooks-text h2 {
+    font-size: 12px;
+  }
+
+  .newbooks-illustration img {
+    height: 90px;
+  }
+}

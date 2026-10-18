@@ -1,0 +1,167 @@
+.adabiyotlar-section {
+  width: 100%;
+  padding: 30px 24px 60px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.adabiyotlar-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.adabiyotlar-heading {
+  margin: 0;
+  text-align: center;
+  color: #111;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.adabiyotlar-underline {
+  width: 300px;
+  max-width: 80%;
+  height: 1px;
+  background: #ccc;
+  margin: 5px auto 22px;
+}
+
+.adabiyotlar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.adabiyotlar-card {
+  max-width: 236px;
+  height: 387px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #b9c4d8;
+  border-radius: 4px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.adabiyotlar-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 14px rgba(48, 65, 107, 0.12);
+}
+
+.adabiyotlar-cover {
+  width: 100%;
+  max-width: 220px;
+  height: 310px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.adabiyotlar-cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.adabiyotlar-title {
+  width: 100%;
+  margin: 8px 0 0;
+  color: #30416b;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+/* Planshet */
+@media (max-width: 768px) {
+  .adabiyotlar-section {
+    padding: 28px 18px 45px;
+  }
+
+  .adabiyotlar-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .adabiyotlar-card {
+    height: 175px;
+    padding: 7px;
+  }
+
+  .adabiyotlar-cover {
+    height: 125px;
+  }
+
+  .adabiyotlar-title {
+    font-size: 10px;
+    margin-top: 7px;
+  }
+}
+
+/* Telefon */
+@media (max-width: 520px) {
+  .adabiyotlar-section {
+    padding: 25px 12px 40px;
+  }
+
+  .adabiyotlar-heading {
+    font-size: 22px;
+  }
+
+  .adabiyotlar-underline {
+    margin-bottom: 20px;
+  }
+
+  .adabiyotlar-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .adabiyotlar-card {
+    height: 205px;
+    padding: 9px;
+  }
+
+  .adabiyotlar-cover {
+    height: 155px;
+  }
+
+  .adabiyotlar-title {
+    font-size: 11px;
+    line-height: 1.35;
+  }
+}
+
+@media (max-width: 350px) {
+  .adabiyotlar-section {
+    padding-right: 9px;
+    padding-left: 9px;
+  }
+
+  .adabiyotlar-grid {
+    gap: 8px;
+  }
+
+  .adabiyotlar-card {
+    height: 180px;
+    padding: 7px;
+  }
+
+  .adabiyotlar-cover {
+    height: 130px;
+  }
+
+  .adabiyotlar-title {
+    font-size: 10px;
+  }
+}

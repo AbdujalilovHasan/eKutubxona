@@ -1,0 +1,71 @@
+.marifat-box {
+  max-width: 960px;
+  width: 100%;
+  padding: 50px 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.marifat-box h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+.marifat-box p {
+  margin-top: 20px;
+  margin-left: auto;
+  max-width: 260px;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .marifat-box {
+    padding: 40px 24px;
+  }
+
+  .marifat-box h1 {
+    font-size: 26px;
+  }
+
+  .marifat-box p {
+    max-width: 220px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .marifat-box {
+    padding: 30px 16px;
+  }
+
+  .marifat-box h1 {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+
+  .marifat-box p {
+    max-width: 100%;
+    margin-top: 16px;
+    font-size: 18px;
+    text-align: right;
+  }
+}
+
+@media (max-width: 360px) {
+  .marifat-box {
+    padding: 24px 12px;
+  }
+
+  .marifat-box h1 {
+    font-size: 20px;
+  }
+
+  .marifat-box p {
+    font-size: 16px;
+  }
+}

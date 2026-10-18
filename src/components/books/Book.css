@@ -1,0 +1,228 @@
+.books-page {
+  padding: 70px 0 70px 0;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.books-search {
+  width: 100%;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px 0 36px;
+  border: 1px solid #aab5cd;
+  border-radius: 30px;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.35);
+}
+
+.books-search input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.books-search input::placeholder {
+  color: #bdbdbd;
+  opacity: 1;
+}
+
+.search-icon {
+  position: relative;
+  width: 28px;
+  height: 30px;
+  flex-shrink: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.search-icon span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  left: 1px;
+  border: 2.5px solid #050505;
+  border-radius: 50%;
+}
+
+.search-icon span::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 2.5px;
+  background: #050505;
+  right: -8px;
+  bottom: -5px;
+  transform: rotate(48deg);
+  border-radius: 2px;
+}
+
+.books-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.books-nav button {
+  width: 40%;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background: #304571;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.28);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.books-nav button:hover {
+  background: #24365b;
+}
+
+/* Kitoblar bo'limi */
+.books-content {
+  margin-top: 76px;
+}
+
+.books-content h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 29px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.books-underline {
+  width: 345px;
+  max-width: 100%;
+  height: 2px;
+  margin: 2px auto 33px;
+  background: #c8c8c8;
+}
+
+/* Kitob kartochkalari */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.book-card {
+  text-decoration: none;
+  height: 437px;
+  min-width: 0;
+  border: 1px solid #7485ad;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13px 10px 12px;
+  background: #fff;
+}
+
+.book-cover {
+  width: 83%;
+  height: 310px;
+  object-fit: cover;
+  border-radius: 9px;
+  display: block;
+}
+
+.book-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #304571;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+  padding-top: 8px;
+}
+
+.no-books {
+  font-size: 24px;
+}
+
+/* Telefon va kichik ekranlar */
+@media (max-width: 700px) {
+  .books-page {
+    padding: 25px 5%;
+  }
+
+  .books-search {
+    height: 43px;
+    padding: 0 20px;
+  }
+
+  .books-search input {
+    font-size: 19px;
+  }
+
+  .books-nav {
+    gap: 12px;
+  }
+
+  .books-nav button {
+    width: 50%;
+    height: 38px;
+    font-size: 17px;
+  }
+
+  .books-content {
+    margin-top: 55px;
+  }
+
+  .books-content h1 {
+    font-size: 25px;
+  }
+
+  .books-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .book-card {
+    height: 310px;
+  }
+
+  .book-cover {
+    height: 215px;
+    width: 90%;
+  }
+
+  .book-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 360px) {
+  .books-grid {
+    gap: 8px;
+  }
+
+  .book-card {
+    padding: 10px 5px;
+    height: 275px;
+  }
+
+  .book-cover {
+    height: 185px;
+  }
+
+  .book-title {
+    font-size: 16px;
+  }
+}

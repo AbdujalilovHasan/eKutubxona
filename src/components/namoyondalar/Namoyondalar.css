@@ -1,0 +1,154 @@
+.namoyondalar-section {
+  width: 100%;
+  padding: 45px 24px 55px;
+  background-color: #edf3ff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+}
+
+.namoyondalar-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.namoyondalar-heading {
+  margin: 0;
+  color: #111;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.namoyondalar-underline {
+  width: 315px;
+  max-width: 80%;
+  height: 2px;
+  margin: 4px auto 48px;
+  background-color: #c9cdd5;
+}
+
+.namoyondalar-grid {
+    cursor: default;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.namoyondalar-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  text-align: center;
+}
+
+.namoyondalar-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: #d8d8d8;
+  display: block;
+  margin-bottom: 5px;
+  transition: transform 0.25s ease;
+}
+
+.namoyondalar-card:hover .namoyondalar-image {
+  transform: scale(1.04);
+}
+
+.namoyondalar-name {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.namoyondalar-date {
+  margin: 2px 0 0;
+  color: #444;
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .namoyondalar-section {
+    padding: 40px 24px;
+  }
+
+  .namoyondalar-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 35px;
+    column-gap: 20px;
+  }
+
+  .namoyondalar-underline {
+    margin-bottom: 35px;
+  }
+
+  .namoyondalar-image {
+    width: 125px;
+    height: 125px;
+  }
+
+  .namoyondalar-name {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .namoyondalar-section {
+    padding: 30px 14px 38px;
+  }
+
+  .namoyondalar-heading {
+    font-size: 22px;
+  }
+
+  .namoyondalar-underline {
+    width: 240px;
+    margin: 5px auto 28px;
+  }
+
+  .namoyondalar-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 10px;
+  }
+
+  .namoyondalar-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .namoyondalar-name {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .namoyondalar-date {
+    font-size: 9px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 350px) {
+  .namoyondalar-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .namoyondalar-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .namoyondalar-name {
+    font-size: 18px;
+  }
+
+  .namoyondalar-date {
+    font-size: 10px;
+  }
+}
